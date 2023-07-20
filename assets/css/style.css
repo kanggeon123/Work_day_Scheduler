@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    align-items: center;
+    vertical-align: baseline;
+}
+
+p {
+    display: inline-block;
+    font-size: 17px;
+    margin: 0%;
+}
+
+.schedule {
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    height: 60px;
+}
+
+.time {
+    line-height: 60px;
+    flex: 10%;
+    border-top: 2px dotted;
+}
+
+.text-box{
+    flex: 80%;
+    margin-bottom: 1px;
+}
+
+.save-button{
+    background-color: #99f;
+    color: white;
+    flex:10%;
+    margin-bottom: 1px;
+    border: none;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
