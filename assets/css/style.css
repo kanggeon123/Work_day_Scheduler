@@ -38,3 +38,7 @@ p {
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
 }
+
+.save-button:hover{
+    color:black;
+}
