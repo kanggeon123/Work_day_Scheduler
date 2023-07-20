@@ -10,6 +10,11 @@ p {
     margin: 0%;
 }
 
+.status {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
 .schedule {
     justify-content: space-between;
     display: flex;

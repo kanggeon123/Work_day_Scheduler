@@ -48,7 +48,8 @@ function saveSchedule(event) {
             work: $('#text-box' + i).val()
           };
         localStorage.setItem(i, JSON.stringify(schedule));
-        console.log($('#text-box' + i).val());
+        var status = $('#status');
+        status.text('Appointment added to local storage!');
     }
   }
   
