@@ -1,20 +1,28 @@
 var schedules = $('#schedules');
 var startTime = 9;
 var endTime = 17;
+var currentHour = dayjs().hour(14);
 
 for(var i = startTime; i <= endTime; i++) {
     var schedule = $('<div>');
     schedule.attr('class','schedule');
 
     var time = $('<p>');
-    var hour = dayjs().hour(i).format('hha');
-    time.text(hour);
+    var hour = dayjs().hour(i);
+    time.text(hour.format('hha'));
     time.attr('class','time');
     schedule.append(time);
 
     var input = $('<input>');
     input.attr('class','text-box');
     input.attr('id','text-box' + i);
+    
+    if(currentHour.hour() > hour.hour())
+        input.css('background-color','#bbb');
+    else if(currentHour.hour() == hour.hour())
+        input.css('background-color','#f66');
+    else 
+        input.css('background-color','#6f6');
     
     var lastWork = JSON.parse(localStorage.getItem(i));
     input.val(lastWork.work);

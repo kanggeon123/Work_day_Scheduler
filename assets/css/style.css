@@ -27,7 +27,10 @@ p {
 .text-box{
     flex: 80%;
     margin-bottom: 1px;
+    padding:5px;
+    border: none;
 }
+
 
 .save-button{
     background-color: #99f;
