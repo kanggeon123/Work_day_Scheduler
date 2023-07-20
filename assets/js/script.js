@@ -4,7 +4,8 @@ for(var i = 9; i < 18; i++) {
     schedule.attr('class','schedule');
 
     var time = $('<p>');
-    time.text(i+'am');
+    var hour = dayjs().hour(i).format('hha');
+    time.text(hour);
     time.attr('class','time');
     schedule.append(time);
 
